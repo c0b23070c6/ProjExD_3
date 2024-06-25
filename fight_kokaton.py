@@ -145,7 +145,7 @@ class Score:
     """
     撃ち落とした爆弾の数を表示するスコアクラス
     """
-    def __init__(self):
+    def __init__(self) ->None: # Noneの追加
         self.score = 0
         self.fonto = pg.font.SysFont("hgp創英角ﾎﾟｯﾌﾟ体", 30)
         self.img = self.fonto.render(f"スコア：{self.score}", 0, (0, 0, 255))
